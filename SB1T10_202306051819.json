@@ -1,0 +1,703 @@
+{
+"items": [
+	{
+		"B1_COD" : " COM00000000000000000000000011",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : " COM000000000006              ",
+		"B1_DESC" : "REQUEIJAO CREMOSO LIGHT 175 G ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : " COM0000MAT103CT030           ",
+		"B1_DESC" : "PROD COM0000MAT103CT030       ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : " FAT00000000000000000000000090",
+		"B1_DESC" : "PRODUTO FATURAM - LOTE \/ END  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000000010",
+		"B1_DESC" : "PRODUTO WMS                   ",
+		"B1_TIPO" : "EM",
+		"B1_UM" : "CX",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000000061",
+		"B1_DESC" : "PADRAO                        ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000001KIT",
+		"B1_DESC" : "PRODUTO KIT TEC               ",
+		"B1_TIPO" : "KT",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000001PMS",
+		"B1_DESC" : "PRODUTO PMS 001               ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000002KIT",
+		"B1_DESC" : "KIT 99 ITENS SIGATEC          ",
+		"B1_TIPO" : "KT",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000002TEC",
+		"B1_DESC" : "MATERIAL DE IMPLANTACAO       ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000003KIT",
+		"B1_DESC" : "TEC_KIT 003                   ",
+		"B1_TIPO" : "KT",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000003TEC",
+		"B1_DESC" : "MATERIAL DE CONSUMO           ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000004TEC",
+		"B1_DESC" : "LOCACAO DE EQUIPAMENTO        ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000005TEC",
+		"B1_DESC" : "GUINDASTE                     ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000006TEC",
+		"B1_DESC" : "PRODUTO SIGATEC               ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000007TEC",
+		"B1_DESC" : "PRESTACAO DE SERVICOS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000008TEC",
+		"B1_DESC" : "VIGILANTE 5 X 2               ",
+		"B1_TIPO" : "MO",
+		"B1_UM" : "HR",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000009TEC",
+		"B1_DESC" : "GUARDA-CHUVA \/ SOMBREIRO      ",
+		"B1_TIPO" : "MC",
+		"B1_UM" : "PC",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000010TEC",
+		"B1_DESC" : "CAFE                          ",
+		"B1_TIPO" : "MC",
+		"B1_UM" : "CX",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000011TEC",
+		"B1_DESC" : "VIGILANCIA DIURNO             ",
+		"B1_TIPO" : "MO",
+		"B1_UM" : "HR",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000012TEC",
+		"B1_DESC" : "CORTADOR DE GRAMA - MANUAL    ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "PC",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000013TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO           ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000014TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO           ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000015TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 015       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000016TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 015       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000017TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 017       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000018TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 018       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000019TEC",
+		"B1_DESC" : "ARMA                          ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "00000000000000000000000001TEC ",
+		"B1_DESC" : "RECURSOS HUMANOS              ",
+		"B1_TIPO" : "MO",
+		"B1_UM" : "HR",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000020TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 020       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000021TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 021       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000022TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 022       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000023TEC",
+		"B1_DESC" : "BASE DE ATENDIMENTO 023       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000024TEC",
+		"B1_DESC" : "REVOLVER                      ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000025TEC",
+		"B1_DESC" : "PISTOLA                       ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000026TEC",
+		"B1_DESC" : "MACROGALPAO                   ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000027TEC",
+		"B1_DESC" : "ITEM KIT TEC                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000028TEC",
+		"B1_DESC" : "000000000000000000000000028TEC",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000029TEC",
+		"B1_DESC" : "000000000000000000000000029TEC",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000000000000000030TEC",
+		"B1_DESC" : "BASE GRANEL                   ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000000000000000000000000MNT01",
+		"B1_DESC" : "PROD MNT 01                   ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000000000000000000000000MNT02",
+		"B1_DESC" : "PROD MNT 02                   ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000000000000000000000000MNT03",
+		"B1_DESC" : "PROD MNT 01                   ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "00000000000000000000_KIT_TEC01",
+		"B1_DESC" : "KIT TEC LOCACAO               ",
+		"B1_TIPO" : "KT",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000001               ",
+		"B1_DESC" : "P1                            ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000002               ",
+		"B1_DESC" : "P2                            ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000003               ",
+		"B1_DESC" : "P3                            ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000004               ",
+		"B1_DESC" : "P4                            ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000000005               ",
+		"B1_DESC" : "P5                            ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000000000013TEC               ",
+		"B1_DESC" : "SERVICO JARDINAGEM            ",
+		"B1_TIPO" : "MO",
+		"B1_UM" : "HR",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001                       ",
+		"B1_DESC" : "PRODUTO ALGODAO               ",
+		"B1_TIPO" : "BN",
+		"B1_UM" : "KG",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001000                    ",
+		"B1_DESC" : "PRODUTO MATA105-01            ",
+		"B1_TIPO" : "MM",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001001                    ",
+		"B1_DESC" : "PRODUTO MATA105-02            ",
+		"B1_TIPO" : "MM",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001002                    ",
+		"B1_DESC" : "PRODUTO MATA105-03            ",
+		"B1_TIPO" : "MM",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001008                    ",
+		"B1_DESC" : "PRODUTO 1008                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001009                    ",
+		"B1_DESC" : "PRODUTO 1009                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001015                    ",
+		"B1_DESC" : "PRODUTO 1015                  ",
+		"B1_TIPO" : "SM",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001016                    ",
+		"B1_DESC" : "PRODUTO 1016                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001017                    ",
+		"B1_DESC" : "PRODUTO 1017                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001019                    ",
+		"B1_DESC" : "PRODUTO 1019                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001020                    ",
+		"B1_DESC" : "PRODUTO 1020                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001021                    ",
+		"B1_DESC" : "PRODUTO 1021                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001025                    ",
+		"B1_DESC" : "PRODUTO 1025                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000001031                    ",
+		"B1_DESC" : "PRODUTO 1031                  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000002                       ",
+		"B1_DESC" : "SOJA GRAO                     ",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "KG",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0000004                       ",
+		"B1_DESC" : "SOJA SEMENTE                  ",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "KG",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000001                        ",
+		"B1_DESC" : "PRODUTO TRANSFERÊNCIA FILIAL  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "PC",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000002                        ",
+		"B1_DESC" : "PRODUTO TRANSF LOTE\/END       ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "PC",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "000003                        ",
+		"B1_DESC" : "PRODUTO DE TESTE              ",
+		"B1_TIPO" : "ME",
+		"B1_UM" : "CX",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0001                          ",
+		"B1_DESC" : "PROD 0001                     ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0002                          ",
+		"B1_DESC" : "PROD 0002                     ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0003                          ",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "001                           ",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "001ATF                        ",
+		"B1_DESC" : "TESTE ESTORNO DA BAIXA        ",
+		"B1_TIPO" : "BN",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "001FABIANO                    ",
+		"B1_DESC" : "GUARDA-CHUVA \/ SOMBREIRO      ",
+		"B1_TIPO" : "ME",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "001FIN                        ",
+		"B1_DESC" : "PROD. SERVICO VIAGENS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "002                           ",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "002FIN                        ",
+		"B1_DESC" : "PROD. SERVICO VIAGENS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "003                           ",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "003FIN                        ",
+		"B1_DESC" : "PROD. SERVICO VIAGENS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "004FIN                        ",
+		"B1_DESC" : "PROD. SERVICO VIAGENS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "005FIN                        ",
+		"B1_DESC" : "PROD. SERVICO VIAGENS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "006FIN                        ",
+		"B1_DESC" : "PROD. SERVICO VIAGENS         ",
+		"B1_TIPO" : "SV",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "01                            ",
+		"B1_DESC" : "01                            ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "CX",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "015FIN                        ",
+		"B1_DESC" : "PRODUTO SIMPLES PARA FINANCEIR",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "01LCDPR                       ",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "01PROD                        ",
+		"B1_DESC" : "PRODUTO 01                    ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "04830                         ",
+		"B1_DESC" : "04830                         ",
+		"B1_TIPO" : "MO",
+		"B1_UM" : "SV",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "0999TEC                       ",
+		"B1_DESC" : "GUINDASTE MDL 999             ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "PC",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "13030000AO                    ",
+		"B1_DESC" : "13030000AO                    ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACD000000000000000000000000001",
+		"B1_DESC" : "ACD000000000000000000000000001",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACD000000000000000000000000002",
+		"B1_DESC" : "ACD000000000000000000000000002",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACD000000000000000000000000003",
+		"B1_DESC" : "ACD000000000000000000000000003",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACD000000000000000000000000004",
+		"B1_DESC" : "ACD000000000000000000000000004",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACDACDA03000000000000000000001",
+		"B1_DESC" : "REGS. INVENTARIO MONITOR ACD  ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACDACDA10000000000000000000001",
+		"B1_DESC" : "INCLUSAO ORDEM SEPARACAO BROWS",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACDACDM01000000000000000000001",
+		"B1_DESC" : "REQUISICAO GET INVENTARIO     ",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACDACDV00000000000000000000003",
+		"B1_DESC" : "PRODUTO PADRAO                ",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACDACDV02500000000000000000001",
+		"B1_DESC" : "APONTAM. PRODUCAO 2 OPERADORES",
+		"B1_TIPO" : "PA",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	},
+	{
+		"B1_COD" : "ACDACDV02500000000000000000002",
+		"B1_DESC" : "APONTAM. PRODUCAO 2 OPERADORES",
+		"B1_TIPO" : "MP",
+		"B1_UM" : "UN",
+		"QNTD" : 1
+	}
+]}
