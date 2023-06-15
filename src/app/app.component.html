@@ -24,18 +24,17 @@
   [p-hide-select-all]="true"
   [p-single-select]="true"
   [p-selectable-entire-line]="true"
-  (p-selected)="modalRuptura.open()"
+  (p-selected)="makeChart($event)"
   > </po-table>
   <po-divider></po-divider>
   
 </div>
 
-<po-modal #modalRuptura
-
->  
+<po-modal #modalRuptura>  
   <div class="po-row">
     <div class="po-xl-8 po-lg-8 po-md-8 po-sm-8">
-    <po-info p-label="GRAFICO DE RUPTURA" p-value="FABRICADO>PA>VESTUARIO>CALÇA PRETA/TAMANHO 36"> </po-info>
+    <po-info p-label="GRAFICO DE RUPTURA" 
+    [p-value]="chartTitle"> </po-info>
   </div>
   <div class="po-xl-4 po-lg-4 po-md-4 po-sm-4">
   <po-switch

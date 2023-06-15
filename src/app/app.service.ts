@@ -45,7 +45,14 @@ export class AppService {
         description : 'PRODUTO PADRAO                ',
         type : 'PA',
         unity : 'UN',
-        stock_quantity : 1
+        stock_quantity : 1,
+        label_hist:['2023-01-08T12:38:47.739Z','2023-02-08T12:38:47.739Z','2023-03-08T12:38:47.739Z'],
+        data_hist:[20,15,5],
+        label_proj:['2023-04-08T12:38:47.739Z','2023-05-08T12:38:47.739Z'],
+        data_proj:[0,-10],
+        pr:15,
+        es:5
+
       },
       {
         mdmCounterForEntity: 0,
