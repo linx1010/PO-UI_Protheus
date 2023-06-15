@@ -15,15 +15,15 @@ export class AppService {
   
   getDataChart(): Array<PoChartSerie> { 
     return [
-    { label: 'Starbucks', data: [550, 497, 532, 550, 530, 565, 572], type: PoChartType.Area },
-    { label: 'Green Mntn Coffee Roaster', data: [420, 511, 493, 525, 522, 510, 567], type: PoChartType.Area },
-    { label: 'Dunkin Brands Group', data: [312, 542, 497, 610, 542, 661, 674], type: PoChartType.Area },
-    {
-      label: 'Coffee Arabica Price',
-      data: [550, 612, 525, 373, 342, 297, 282],
-      type: PoChartType.Line,
-      color: 'po-color-07'
-    }
+      { label: 'PR', data: [20, 20, 20, 20, 20, 20, 20], type: PoChartType.Area , color: 'green'},
+      { label: 'ES', data: [10, 10, 10, 10, 10, 10, 10], type: PoChartType.Area, color: 'yellow' },
+      { label: 'Ruptura', data: [-10, -10, -10, -10, -10, -10, -10], type: PoChartType.Area, color: 'red' },
+      {
+        label: 'Demanda',
+        data: [50, 30, 20, 15, 0, -10, -15],
+        type: PoChartType.Line,
+        color: 'po-color-07'
+      }
     ];
   };
 

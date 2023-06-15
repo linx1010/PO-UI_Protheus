@@ -24,21 +24,31 @@
   [p-hide-select-all]="true"
   [p-single-select]="true"
   [p-selectable-entire-line]="true"
-  (p-selected)="click3($event)"
+  (p-selected)="modalRuptura.open()"
   > </po-table>
   <po-divider></po-divider>
+  
 </div>
 
-<po-modal #modalRuptura >   
-</po-modal>
+<po-modal #modalRuptura
+
+>  
   <div class="po-row">
-  <po-chart
-  class="po-xl-6 po-lg-6 po-md-6 po-sm-6"
-  p-title="FABRICADO>PA>VESTUARIO>TAMANHO36"
-  [p-options]="chartAreaOptions"
-  [p-categories]="chartAreaCategories"
-  [p-series]="chartAreaSeries"
+    <div class="po-xl-8 po-lg-8 po-md-8 po-sm-8">
+    <po-info p-label="GRAFICO DE RUPTURA" p-value="FABRICADO>PA>VESTUARIO>CALÇA PRETA/TAMANHO 36"> </po-info>
+  </div>
+  <div class="po-xl-4 po-lg-4 po-md-4 po-sm-4">
+  <po-switch
+  name="switch"
+  p-help="help"
+  p-label="Acurácia Quantidade: 95,00%"
+  p-label-off=" intervalo de confiança invisível"
+  p-label-on=" intervalo de confiança visível"
+  (p-change)="changeEvent('p-change')"
   >
-</po-chart>
-</div>
-
+  </po-switch>
+  </div>
+</div> 
+  <canvas #myChart width="600" height="300"></canvas>
+</po-modal>
+ 
