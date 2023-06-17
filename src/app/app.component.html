@@ -2,18 +2,16 @@
 <div>
   <div class="po-row">
   
-  <div class="po-xl-6 po-lg-6 po-md-6 po-sm-6">
+  <div class="po-xl-8 po-lg-8 po-md-8 po-sm-8">
     <div class="po-row">
       <po-combo class="po-md-4" name="classifica" p-label="Classificação" [p-options]="[{ value: 'Option 1' }, { value: 'Option 2' }]"> </po-combo>
       <po-combo class="po-md-4" name="tipo" p-label="Tipo de Produto" [p-options]="[{ value: 'Option 1' }, { value: 'Option 2' }]"> </po-combo>
       <po-combo class="po-md-4" name="grupo" p-label="Grupo de produto" [p-options]="[{ value: 'Option 1' }, { value: 'Option 2' }]"> </po-combo>
     </div>
   </div>
-  
-  <div class="po-xl-6 po-lg-6 po-md-6 po-sm-6">
-    <po-button class="po-md-4" p-label="Sair" (p-click)="onClick()"> </po-button>
-    <po-button class="po-md-4" p-label="Enviar p/ Protheus" (p-click)="click1()"> </po-button>
-    <po-button class="po-md-4" p-label="Receber do Protheus"(p-click)="click2()"></po-button>
+  <div class="po-xl-2 po-lg-2 po-md-2 po-sm-2"></div>
+  <div class="po-xl-2 po-lg-2 po-md-2 po-sm-2">
+    <po-button  p-label="Sair" (p-click)="onClick()"> </po-button>
   </div>
 </div>
   <po-divider></po-divider>
@@ -39,7 +37,6 @@
   <div class="po-xl-4 po-lg-4 po-md-4 po-sm-4">
   <po-switch
   name="switch"
-  p-help="help"
   p-label="Acurácia Quantidade: 95,00%"
   p-label-off=" intervalo de confiança invisível"
   p-label-on=" intervalo de confiança visível"
@@ -48,6 +45,6 @@
   </po-switch>
   </div>
 </div> 
-  <canvas #myChart width="600" height="300"></canvas>
+  <canvas #myChart width="600" height="300">não há dados suficientes</canvas>
 </po-modal>
  

@@ -18,7 +18,7 @@ import { concat } from 'rxjs';
 // export class AppComponent implements OnInit, AfterViewInit {
 export class AppComponent implements OnInit {
   @ViewChild(PoModalComponent, { static: true }) modalRuptura!: PoModalComponent;
-  @ViewChild('myChart')
+  @ViewChild('myChart',{static:false})
   chartRef!: ElementRef;
   myChart!: Chart;
 
@@ -47,13 +47,7 @@ export class AppComponent implements OnInit {
   public onClick() {
     this.proAppConfigService.callAppClose(true);
   }
-  click1(): void {
-    this.proJsToAdvplService.jsToAdvpl('mensagemJavascript', 'Comando Javascript');
-  }
-
-  click2(): void {
-    this.proJsToAdvplService.jsToAdvpl('receberProtheus', '');
-  }
+ 
  
   ngOnInit() {
     this.columns = this.appService.getColumns();
@@ -83,7 +77,7 @@ export class AppComponent implements OnInit {
     size = size-array.length
     const nullArray = new Array(size).fill(null);
     const replicatedArray = nullArray.concat(array);
-    console.log(replicatedArray);
+    // console.log(replicatedArray);
     return replicatedArray;
   }
 
@@ -94,13 +88,15 @@ export class AppComponent implements OnInit {
     // Troca o titulo e prepara os dados para exibição
     this.chartTitle = evento.type.trim()+'>'+evento.description.trim()+'>'+evento.unity.trim();
     let labels =this.makeLabel(evento['label_hist'],evento['label_proj']);
-    let projecion = this.makeProjection(null,labels.length,evento['data_proj'],evento['data_hist'][evento['data_hist'].length-1])
-    let aPR = new Array(labels.length).fill(evento['pr'])
-    let aES = new Array(labels.length).fill(evento['es'])
-    let aRup = new Array(labels.length).fill(projecion[projecion.length-1])
-    
-    console.log(aPR,aES,aRup,evento);
+    let projecion = this.makeProjection(null,labels.length,evento['data_proj'],evento['data_hist'][evento['data_hist'].length-1]);
+    let dataHIst = evento['data_hist'];
+    // Monta a mascara de Ponto de reposicao, estoque de seguranca e ruptura
+    let aPR = new Array(labels.length).fill(evento['pr']);
+    let aES = new Array(labels.length).fill(evento['es']);
+    let aRup = new Array(labels.length).fill(projecion[projecion.length-1]);
+
     const ctx = this.chartRef.nativeElement.getContext('2d');
+
     const myChart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -108,7 +104,7 @@ export class AppComponent implements OnInit {
         datasets: [
           {
             label: 'Movimentação',
-            data: evento['data_hist'],
+            data: dataHIst,
             fill: false,
             borderColor: 'rgb(75, 192, 192)',
             tension: 0.1
@@ -124,15 +120,15 @@ export class AppComponent implements OnInit {
           {
             label: 'PR',
             data: aPR,
-            fill: true,
-            backgroundColor: 'rgba(255, 255, 0, 0.4)',
+            fill: {value:evento['es']},
+            backgroundColor: 'rgba(0, 128, 0, 0.3)',
             borderColor: 'transparent',
           },
           {
             label: 'ES',
             data: aES,
-            fill: {value:evento['pr']},
-            backgroundColor: 'rgba(0, 128, 0, 0.4)',
+            fill: true,
+            backgroundColor: 'rgba(255, 255, 0, 0.3)',
             borderColor: 'transparent',
           },
         
@@ -140,7 +136,7 @@ export class AppComponent implements OnInit {
           label: 'Ruptura',
           data: aRup,
           fill: true,
-          backgroundColor: 'rgba(255, 0, 0, 0.4)',
+          backgroundColor: 'rgba(255, 0, 0, 0.3)',
           borderColor: 'transparent',
         },
         ],
@@ -154,5 +150,6 @@ export class AppComponent implements OnInit {
         },
       },
     });
+
   }
 }

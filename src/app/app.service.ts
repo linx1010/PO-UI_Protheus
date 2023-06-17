@@ -8,27 +8,6 @@ export class AppService {
   constructor() { }
 
 
-
-  getXChart(){ 
-    return['Jan-18', 'Jul-18', 'Jan-19', 'Jul-19', 'Jan-20', 'Jul-20', 'Jan-21']
-  };
-  
-  getDataChart(): Array<PoChartSerie> { 
-    return [
-      { label: 'PR', data: [20, 20, 20, 20, 20, 20, 20], type: PoChartType.Area , color: 'green'},
-      { label: 'ES', data: [10, 10, 10, 10, 10, 10, 10], type: PoChartType.Area, color: 'yellow' },
-      { label: 'Ruptura', data: [-10, -10, -10, -10, -10, -10, -10], type: PoChartType.Area, color: 'red' },
-      {
-        label: 'Demanda',
-        data: [50, 30, 20, 15, 0, -10, -15],
-        type: PoChartType.Line,
-        color: 'po-color-07'
-      }
-    ];
-  };
-
-
-
   getColumns(): Array<PoTableColumn> {
     return [
       { property: 'code', width: '8%' },
