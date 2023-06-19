@@ -51,45 +51,47 @@ export class AppComponent implements OnInit {
  
   ngOnInit() {
     this.columns = this.appService.getColumns();
-    this.items = this.appService.getItems();
+    let table = this.appService.getItems();
+    this.items = table[0]['alerts']
 
   }
   
-  makeLabel(aHist=[], aProj=[]){
-    let combinedArray = aHist.concat(aProj);
-    // console.log(combinedArray);
+  makeLabel(graphPoints:Array<any>){
     
-    const labels = Array.from(new Set(combinedArray.map(dateString => {
-      const date = new Date(dateString);
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      return `${year}-${month.toString().padStart(2, '0')}`;
-    })));
-    
-    // console.log(labels)
-    return labels
-
+    const formattedReferences = graphPoints.map((point) => {
+      const reference = point.reference.substring(0, 7); // Obtém apenas os primeiros 7 caracteres (ano-mês)
+      return reference;
+    });
+    return formattedReferences
   }
 
 
-  makeProjection(value=null, size:number, array:Array<any>, firstElement:any){
-    array.unshift(firstElement)
-    size = size-array.length
-    const nullArray = new Array(size).fill(null);
-    const replicatedArray = nullArray.concat(array);
-    // console.log(replicatedArray);
-    return replicatedArray;
+  makeProjection(graphPoints:Array<any>){
+    let conection = this.makeData(graphPoints);
+    let projectPoints = graphPoints.filter((point) => point.prediction === true).map((point) => point.value);
+    //adiciona o ultimo elemento do data ao primeiro pra fazer a ligação entre os dois
+    projectPoints = [conection[conection.length - 1], ...projectPoints];
+    const nullArray = new Array(graphPoints.length - projectPoints.length).fill(null);
+    const projArray = nullArray.concat(projectPoints);
+    return projArray;
+  }
+
+  makeData(graphPoints:Array<any>){
+    const filteredValues = graphPoints.filter((point) => point.prediction === false).map((point) => point.value);
+    return filteredValues;
   }
 
 
   public makeChart(evento:any): void {
     // abre o modal
     this.modalRuptura.open();
+    // console.log(evento);
     // Troca o titulo e prepara os dados para exibição
-    this.chartTitle = evento.type.trim()+'>'+evento.description.trim()+'>'+evento.unity.trim();
-    let labels =this.makeLabel(evento['label_hist'],evento['label_proj']);
-    let projecion = this.makeProjection(null,labels.length,evento['data_proj'],evento['data_hist'][evento['data_hist'].length-1]);
-    let dataHIst = evento['data_hist'];
+    this.chartTitle = evento.type.trim()+'>'+evento.description.trim()+'>'+evento.classification.trim();
+    let labels =this.makeLabel(evento['graphPoints']);
+
+    let projecion = this.makeProjection(evento['graphPoints']);
+    let dataHIst = this.makeData(evento['graphPoints']);
     // Monta a mascara de Ponto de reposicao, estoque de seguranca e ruptura
     let aPR = new Array(labels.length).fill(evento['pr']);
     let aES = new Array(labels.length).fill(evento['es']);
@@ -137,6 +139,20 @@ export class AppComponent implements OnInit {
           data: aRup,
           fill: true,
           backgroundColor: 'rgba(255, 0, 0, 0.3)',
+          borderColor: 'transparent',
+        },
+        {
+          label: 'upper',
+          data: [null,null,5,3,-10],
+          fill: true,
+          backgroundColor: 'rgba(0, 0, 0, 1)',
+          borderColor: 'transparent',
+        },
+        {
+          label: 'lower',
+          data: [null,null,5,-2,-15],
+          fill: true,
+          backgroundColor: 'rgba(0, 0, 0, 1)',
           borderColor: 'transparent',
         },
         ],
