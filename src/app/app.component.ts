@@ -15,7 +15,6 @@ import { concat } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-// export class AppComponent implements OnInit, AfterViewInit {
 export class AppComponent implements OnInit {
   @ViewChild(PoModalComponent, { static: true }) modalRuptura!: PoModalComponent;
   @ViewChild('myChart',{static:false})
@@ -26,6 +25,8 @@ export class AppComponent implements OnInit {
   
   columns: Array<PoTableColumn>=[];
   items: Array<any> = [];
+  cType: Array<any> = [];
+  cGroup: Array<any> = [];
   event: boolean = false;
   chartTitle!: string;
   
@@ -52,7 +53,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.columns = this.appService.getColumns();
     let table = this.appService.getItems();
-    this.items = table[0]['alerts']
+    this.items = table[0]['alerts'];
+    console.log(this.items);
+    this.cType = this.items.filter((point) => point.prediction === true).map((point) => point.value);
+
+  }
+  makeCType(){
+
+  }
+  makeCGroup(){
 
   }
   
@@ -95,6 +104,8 @@ export class AppComponent implements OnInit {
     // Monta a mascara de Ponto de reposicao, estoque de seguranca e ruptura
     let aPR = new Array(labels.length).fill(evento['pr']);
     let aES = new Array(labels.length).fill(evento['es']);
+    aPR = new Array(labels.length).fill(10);
+    aES = new Array(labels.length).fill(5);
     let aRup = new Array(labels.length).fill(projecion[projecion.length-1]);
 
     const ctx = this.chartRef.nativeElement.getContext('2d');
@@ -122,7 +133,7 @@ export class AppComponent implements OnInit {
           {
             label: 'PR',
             data: aPR,
-            fill: {value:evento['es']},
+            fill: {value:aES[0]},
             backgroundColor: 'rgba(0, 128, 0, 0.3)',
             borderColor: 'transparent',
           },

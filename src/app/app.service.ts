@@ -95,7 +95,7 @@ export class AppService {
                   },
                   {		
                   code:	"COM00000000000000000000000011",
-                  reference:	"2023-01-30T00:00:00-03:00",
+                  reference:	"2023-05-30T00:00:00-03:00",
                   accuracy:	95,
                   id:	"747482197ea943f3bc551b3a54783350",
                   lower_bound:	-20,
